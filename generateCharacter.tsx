@@ -20,13 +20,13 @@ const characterComponents = {
 // TODO: Restructure URL to contain action components
 const buildCharacterURL = (components) => {
     // Base URL
-    // let url = "https://maplestory.io/api/character/";
-    // Object.keys(components).forEach(function(key) {
-    //     url += `%7B%22itemId%22%3A${components[key]}%2C%22version%22%3A%22222%22%7D%2C`;
-    // })
-    // url += `/stand1/2?showears=false&showLefEars=false&showHighLefEars=undefined&resize=1&name=&flipX=true&bgColor=0,0,0,0`;
+    let url = "https://maplestory.io/api/character/";
+    Object.keys(components).forEach(function(key) {
+        url += `%7B%22itemId%22%3A${components[key]}%2C%22version%22%3A%22222%22%7D%2C`;
+    })
+    url += `/stand1/2?showears=false&showLefEars=false&showHighLefEars=undefined&resize=3&name=&flipX=false&bgColor=0,0,0,0`;
 
-    let url = "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22version%22%3A%22220%22%7D%2C%7B%22itemId%22%3A12000%2C%22version%22%3A%22220%22%7D%2C%7B%22itemId%22%3A60000%2C%22version%22%3A%22223%22%7D%2C%7B%22itemId%22%3A50047%2C%22version%22%3A%22223%22%7D%2C%7B%22itemId%22%3A1042129%2C%22version%22%3A%22223%22%7D%2C%7B%22itemId%22%3A1062112%2C%22version%22%3A%22223%22%7D%2C%7B%22itemId%22%3A1012636%2C%22animationName%22%3A%22default%22%2C%22version%22%3A%22223%22%7D/stand1/0?showears=false&showLefEars=false&showHighLefEars=undefined&resize=1&name=&flipX=true&bgColor=0,0,0,0"
+    // let url = "https://maplestory.io/api/character/%7B%22itemId%22%3A2000%2C%22version%22%3A%22220%22%7D%2C%7B%22itemId%22%3A12000%2C%22version%22%3A%22220%22%7D%2C%7B%22itemId%22%3A60000%2C%22version%22%3A%22223%22%7D%2C%7B%22itemId%22%3A50047%2C%22version%22%3A%22223%22%7D%2C%7B%22itemId%22%3A1042129%2C%22version%22%3A%22223%22%7D%2C%7B%22itemId%22%3A1062112%2C%22version%22%3A%22223%22%7D%2C%7B%22itemId%22%3A1012636%2C%22animationName%22%3A%22default%22%2C%22version%22%3A%22223%22%7D/stand1/0?showears=false&showLefEars=false&showHighLefEars=undefined&resize=1&name=&flipX=true&bgColor=0,0,0,0"
     return url;
 }
 
